@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "outDir": "./compiled/",
+    "strict": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "module": "es6",
+    "moduleResolution": "node",
+    "target": "es6",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "isolatedModules": true
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "typeRoots": [
+    "./src"
+  ]
+}

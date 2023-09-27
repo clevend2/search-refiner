@@ -1,0 +1,9 @@
+features:
+  - desc: "Filter out domains from search results"
+    progress: "in progress"
+  - desc: "Track and mark when participating in activism"
+    progress: "planned"  
+    types:
+      - "climate"
+  - desc: "Save and provide templates for activist letters/posts"
+    progress: "planned"

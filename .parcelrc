@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "@parcel/config-default",
+    "@parcel/config-webextension"
+  ],
+  "transformers": {
+    "src/search-engines/*.css": ["@parcel/transformer-inline-string"]
+  }
+}

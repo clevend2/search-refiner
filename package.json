@@ -1,0 +1,40 @@
+{
+  "name": "search-refiner",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "build-firefox-dev": "parcel build src/packages/firefox/manifest.json --log-level verbose --target webext-dev --detailed-report 50",
+    "watch-firefox-dev": "parcel watch src/packages/firefox/manifest.json --log-level verbose --target webext-dev --detailed-report 50",
+    "build-firefox": "parcel build src/packages/firefox/manifest.json --log-level verbose --target webext-prod --detailed-report 50",
+    "test-firefox": "npx web-ext run --source-dir dist/webext-dev --verbose --start-url https://duckduckgo.com/?q=test"
+  },
+  "sideEffects": false,
+  "targets": {
+    "webext-dev": {
+      "sourceMap": false,
+      "scopeHoist": false,
+      "optimize": false
+    },
+    "webext-prod": {}
+  },
+  "dependencies": {
+    "@parcel/config-webextension": "^2.0.0-rc.0",
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "@parcel/transformer-inline-string": "^2.0.0-rc.0",
+    "@parcel/transformer-raw": "^2.0.0-alpha.3",
+    "@types/natural": "^5.0.0",
+    "@types/webextension-polyfill": "0.8.0",
+    "@typescript-eslint/eslint-plugin": "4.30.0",
+    "@typescript-eslint/parser": "4.30.0",
+    "natural": "^5.1.1",
+    "parcel": "^2.0.0-rc.0",
+    "typescript": "4.4.2",
+    "wasm-pack": "^0.10.1",
+    "web-ext": "^6.4.0",
+    "webextension-polyfill": "0.8.0"
+  }
+}

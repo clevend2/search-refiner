@@ -1,0 +1,48 @@
+@font-face{
+  font-family: 'Fira Sans';
+  src: url('../../../assets/fonts/FiraSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Fira Sans';
+  src: url('../../../assets/fonts/FiraSans-SemiBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --font-size-reg:
+}
+
+.domains {
+  padding-top: 12px;
+  padding-bottom: 12px; 
+  font-family: 'Fira Sans';
+  font-size: 13px;
+}
+.domain {
+  display: flex;
+  justify-content: space-between;
+}
+.domain > * {
+  margin: 4px 8px;
+}
+.desc {
+  flex: 1;
+}
+.actions {
+  flex: 0 1 16px;
+  display: flex;
+}
+.action {
+  font-weight: bold;
+}
+.action-unblock-icon {
+  display: inline-block;
+  color: black;
+  background-image: url(../../../assets/icons/Stop-16.svg);
+  width: 16px;
+  height: 16px;
+}
