@@ -13,7 +13,7 @@ This was a project I took on personally back in 2019 with a few goals:
 2. Adding domains which are excluded by default from search results as an alternative to search engine syntax
 
 ## Where it is now:
-I had to abandon it in a half-formed state due to other life priorities. I still have published it here as I was please to be able to:
+I had to abandon it in a half-formed state due to other life priorities. I still have published it here as I was proud to be able to:
 
 1. Implement an interface to a rust-based NLP library and use tokenization and classification to score sentiments on each search result
 2. Leverage `wasm-pack` with Rust to compile Rust code into WebAssembly and utilize it at browser runtime
